@@ -1,13 +1,20 @@
+const babel = require('rollup-plugin-babel');
 const buble = require('rollup-plugin-buble');
-const uglify = require('rollup-plugin-uglify');
+const nodeResolve = require('rollup-plugin-node-resolve');
+const uglify = require('rollup-plugin-uglify-es');
 
 module.exports = {
 	entry: 'src/UriTemplate.js',
-	external: [],
+	external: [
+		{Uri: 'Uri'}
+	],
 	globals: {
 	},
 	plugins: [
-		buble()
+		nodeResolve(),
+		// babel()
+		buble(),
+		uglify()
 	],
 	targets: [
 		{
