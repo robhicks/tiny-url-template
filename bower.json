@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "UrlTemplae",
   "version": "1.0.0",
   "description": "Lightweight Javascript library for handling URLs",
   "main": "dist/Uri.iife.js",
@@ -11,7 +11,7 @@
     "test",
     "tests"
   ],
-  "keywords": "Javascript, URLs, URI, Lightweight", 
+  "keywords": "Javascript, URLs, URI, Lightweight",
   "authors": "rob@hixfamily.org",
   "license": "MIT"
 }
