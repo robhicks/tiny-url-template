@@ -1,8 +1,8 @@
 {
-  "name": "UrlTemplae",
+  "name": "UrlTemplate",
   "version": "1.0.0",
   "description": "Lightweight Javascript library for handling URLs",
-  "main": "dist/Uri.iife.js",
+  "main": "dist/UrlTemplate.iife.js",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -11,7 +11,7 @@
     "test",
     "tests"
   ],
-  "keywords": "Javascript, URLs, URI, Lightweight",
+  "keywords": "Javascript, url template",
   "authors": "rob@hixfamily.org",
   "license": "MIT"
 }

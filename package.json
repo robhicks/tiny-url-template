@@ -1,5 +1,5 @@
 {
-  "name": "UriTemplate",
+  "name": "UrlTemplate",
   "version": "1.0.0",
   "description": "Lightweight Javascript library which complies with RFC 6570 for expanding UIR Templates.",
   "keywords": [
@@ -10,9 +10,9 @@
     "URI Templates",
     "RFC 6570"
   ],
-  "repository": "https://github.com/robhicks/UriTemplate.git",
-  "main": "dist/UriTemplate.cjs.js",
-  "module": "dist/UriTemplate.es.js",
+  "repository": "https://github.com/robhicks/UrlTemplate.git",
+  "main": "dist/UrlTemplate.cjs.js",
+  "module": "dist/UrlTemplate.es.js",
   "scripts": {
     "build": "rollup -cw",
     "dev": "rollup -cw",

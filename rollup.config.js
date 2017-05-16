@@ -4,7 +4,7 @@ const nodeResolve = require('rollup-plugin-node-resolve');
 const uglify = require('rollup-plugin-uglify-es');
 
 module.exports = {
-	entry: 'src/UriTemplate.js',
+	entry: 'src/UrlTemplate.js',
 	external: [
 		{Uri: 'Uri'}
 	],
@@ -18,15 +18,15 @@ module.exports = {
 	],
 	targets: [
 		{
-			dest: 'dist/UriTemplate.cjs.js',
+			dest: 'dist/UrlTemplate.cjs.js',
 			format: 'cjs',
 		},
 		{
-			dest: 'dist/UriTemplate.es.js',
+			dest: 'dist/UrlTemplate.es.js',
 			format: 'es',
 		},
 		{
-			dest: 'dist/UriTemplate.iife.js',
+			dest: 'dist/UrlTemplate.iife.js',
 			format: 'iife',
 			moduleName: 'Uri'
 		}
