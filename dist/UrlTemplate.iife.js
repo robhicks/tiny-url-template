@@ -1,1 +1,41 @@
-var Uri=function(){"use strict";var t=function(t){return this.uri=new Uri(t),this};return t.prototype.expand=function(t){var r=this;return this.path=this.uri.path.get(),this.urlTemplateQuery=this.uri.query.getUrlTemplateQuery(),this.path.forEach(function(i,e){var u=i.substring(i.lastIndexOf("{")+1,i.lastIndexOf("}"));u&&r.uri.path.replace(t[u],e)}),this.urlTemplateQuery&&this.urlTemplateQuery.split(",").forEach(function(i){if(t[i]){var e={};e[i]=t[i],r.uri.query.add(e)}}),this.template=this.uri.toString(),this},t.prototype.toString=function(){return this.template},t}();
+var UrlTemplate = (function () {
+'use strict';
+
+var UriTemplate = function UriTemplate(template) {
+  this.uri = new Uri(template);
+  return this;
+};
+
+UriTemplate.prototype.expand = function expand (obj) {
+    var this$1 = this;
+
+  this.path = this.uri.path.get();
+  this.urlTemplateQuery = this.uri.query.getUrlTemplateQuery();
+  this.path.forEach(function (path, i) {
+    var substitution = path.substring(path.lastIndexOf("{") + 1, path.lastIndexOf("}"));
+    if (substitution) { this$1.uri.path.replace(obj[substitution], i); }
+  });
+
+  if (this.urlTemplateQuery) {
+    var tEls = this.urlTemplateQuery.split(',');
+    tEls.forEach(function (te) {
+      if (obj[te]) {
+        var o = {};
+        o[te] = obj[te];
+         this$1.uri.query.add(o);
+      }
+    });
+  }
+
+  this.template = this.uri.toString();
+  return this;
+
+};
+
+UriTemplate.prototype.toString = function toString () {
+  return this.template;
+};
+
+return UriTemplate;
+
+}());

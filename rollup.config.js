@@ -13,8 +13,7 @@ module.exports = {
 	plugins: [
 		nodeResolve(),
 		// babel()
-		buble(),
-		uglify()
+		buble()
 	],
 	targets: [
 		{
@@ -28,7 +27,7 @@ module.exports = {
 		{
 			dest: 'dist/UrlTemplate.iife.js',
 			format: 'iife',
-			moduleName: 'Uri'
+			moduleName: 'UrlTemplate'
 		}
 	]
 };
