@@ -1,4 +1,4 @@
-export default class UriTemplate {
+export default class UrlTemplate {
   constructor(template) {
     this.uri = new Uri(template);
     return this;

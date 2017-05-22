@@ -1,9 +1,9 @@
-var UriTemplate = function UriTemplate(template) {
+var UrlTemplate = function UrlTemplate(template) {
   this.uri = new Uri(template);
   return this;
 };
 
-UriTemplate.prototype.expand = function expand (obj) {
+UrlTemplate.prototype.expand = function expand (obj) {
     var this$1 = this;
 
   this.path = this.uri.path.get();
@@ -29,8 +29,8 @@ UriTemplate.prototype.expand = function expand (obj) {
 
 };
 
-UriTemplate.prototype.toString = function toString () {
+UrlTemplate.prototype.toString = function toString () {
   return this.template;
 };
 
-export default UriTemplate;
+export default UrlTemplate;
