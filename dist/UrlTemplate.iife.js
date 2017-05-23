@@ -8,6 +8,7 @@ var UrlTemplate = function UrlTemplate(template) {
 
 UrlTemplate.prototype.expand = function expand (obj) {
     var this$1 = this;
+    if ( obj === void 0 ) obj = {};
 
   this.path = this.uri.path.get();
   this.urlTemplateQuery = this.uri.query.getUrlTemplateQuery();

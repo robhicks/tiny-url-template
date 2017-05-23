@@ -4,7 +4,7 @@ export default class UrlTemplate {
     return this;
   }
 
-  expand(obj) {
+  expand(obj = {}) {
     this.path = this.uri.path.get();
     this.urlTemplateQuery = this.uri.query.getUrlTemplateQuery();
     this.path.forEach((path, i) => {

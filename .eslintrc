@@ -18,8 +18,8 @@
     "describe",
     "expect",
     "it",
-    "Quill",
-    "sinon"
+    "sinon",
+    "Uri"
   },
 
   // http://eslint.org/docs/rules/
