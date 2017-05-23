@@ -3,8 +3,8 @@
 
 
 "Uri@https://github.com/robhicks/Uri.git":
-  version "2.0.0"
-  resolved "https://github.com/robhicks/Uri.git#a7835570d2f576a6f22bdd34100c290f972b3588"
+  version "2.1.1"
+  resolved "https://github.com/robhicks/Uri.git#ea13669855e2c925c835d7b8455765477744928e"
 
 abab@^1.0.0:
   version "1.0.3"

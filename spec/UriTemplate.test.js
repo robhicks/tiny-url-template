@@ -6,7 +6,14 @@ describe('UrlTemplateTemplate', () => {
     let url = 'https://beta.familysearch.org/indexing-service/workflow/batches/user/{?userid}';
     let template = new UrlTemplate(url);
 
-    expect(template.expand().toString()).toEqual('https://beta.familysearch.org/indexing-service/workflow/batches/user/');
+    expect(template.expand().toString()).toEqual('https://beta.familysearch.org/indexing-service/workflow/batches/user');
+  });
+
+  it('should not expand a path variable if paramters are not provided', () => {
+    let url = 'https://boo.com{?includeuser,redirect}';
+    let template = new UrlTemplate(url);
+
+    expect(template.expand().toString()).toEqual('https://boo.com');
   });
 
   it('should expand a path variable', () => {
