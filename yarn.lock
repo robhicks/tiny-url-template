@@ -290,11 +290,11 @@ babel-types@^6.10.2, babel-types@^6.24.1, babel-types@^6.25.0, babel-types@^6.9.
     lodash "^4.2.0"
     to-fast-properties "^1.0.1"
 
-babylon@6.14.1:
+babylon@6.14.1, babylon@^6.7.0:
   version "6.14.1"
   resolved "https://registry.yarnpkg.com/babylon/-/babylon-6.14.1.tgz#956275fab72753ad9b3435d7afe58f8bf0a29815"
 
-babylon@^6.17.2, babylon@^6.7.0:
+babylon@^6.17.2:
   version "6.17.3"
   resolved "https://registry.yarnpkg.com/babylon/-/babylon-6.17.3.tgz#1327d709950b558f204e5352587fd0290f8d8e48"
 
@@ -1684,9 +1684,9 @@ uglify-es@^3.0.5:
   version "1.8.3"
   resolved "https://registry.yarnpkg.com/underscore/-/underscore-1.8.3.tgz#4f3fb53b106e6097fcf9cb4109f2a5e9bdfa5022"
 
-"uri-@https://github.com/robhicks/uri-.git#3.0.2":
-  version "3.0.2"
-  resolved "https://github.com/robhicks/uri-.git#0487fdcb9acd7fe5c78c53d393fde6c226664bae"
+uri-@^3.0.3:
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/uri-/-/uri--3.0.3.tgz#08c86a923ed46b3b1d6f7f8bcba60ff8f8abbbda"
 
 util-deprecate@~1.0.1:
   version "1.0.2"
