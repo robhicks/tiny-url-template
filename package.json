@@ -1,7 +1,7 @@
 {
   "name": "UrlTemplate",
   "version": "1.0.0",
-  "description": "Lightweight Javascript library which complies with RFC 6570 for expanding UIR Templates.",
+  "description": "Lightweight Javascript library which complies with RFC 6570 for expanding URL Templates.",
   "keywords": [
     "Lightweight",
     "Javascript",
@@ -38,6 +38,6 @@
     "rollup-watch": "^3.2.2"
   },
   "dependencies": {
-    "Uri": "https://github.com/robhicks/Uri.git"
+    "Uri": "https://github.com/robhicks/Uri.git#3.0.1"
   }
 }

@@ -1,7 +1,7 @@
 {
   "name": "UrlTemplate",
   "version": "1.0.0",
-  "description": "Lightweight Javascript library for handling URLs",
+  "description": "Lightweight Javascript library which complies with RFC 6570 for expanding URL Templates",
   "main": "dist/UrlTemplate.iife.js",
   "ignore": [
     "**/.*",
@@ -11,7 +11,14 @@
     "test",
     "tests"
   ],
-  "keywords": "Javascript, url template",
+  "keywords": [
+    "Lightweight",
+    "Javascript",
+    "library",
+    "es2015",
+    "URI Templates",
+    "RFC 6570"
+  ],
   "authors": "rob@hixfamily.org",
   "license": "MIT"
 }

@@ -35,7 +35,7 @@ describe('UrlTemplateTemplate', () => {
     let url = 'https://beta.familysearch.org/indexing-service/projects/list{?userid}';
     let template = new UrlTemplate(url);
 
-    expect(template.expand({userid: 'robhicks'}).toString()).toEqual('https://beta.familysearch.org/indexing-service/projects?userid=robhicks');
+    expect(template.expand({userid: 'robhicks'}).toString()).toEqual('https://beta.familysearch.org/indexing-service/projects/list?userid=robhicks');
   });
 
   it('should expand a number of query parameter variables', () => {
@@ -43,7 +43,24 @@ describe('UrlTemplateTemplate', () => {
     let template = new UrlTemplate(url);
 
     expect(template.expand({age: 29, name: 'Rob', userid: 'robhicks'}).toString())
-      .toEqual('https://beta.familysearch.org/indexing-service/projects?userid=robhicks&name=Rob&age=29');
+      .toEqual('https://beta.familysearch.org/indexing-service/projects/list?userid=robhicks&name=Rob&age=29');
+  });
+
+  it('should expand a template', () => {
+    let url = 'https://app.quotemedia.com/quotetools/getHistoryDownload.csv{?webmasterId,startDay,startMonth,startYear,endDay,endMonth,endYear,isRanged,symbol}';
+    let template = new UrlTemplate(url);
+
+    expect(template.expand({
+      webmasterId: 500,
+      startDay: '01',
+      startMonth: '01',
+      startYear: 2017,
+      endDay: 31,
+      endMonth: '06',
+      endYear: 2017,
+      isRanged: false,
+      symbol: 'aapl'
+    }).toString()).toEqual('https://app.quotemedia.com/quotetools/getHistoryDownload.csv?webmasterId=500&startDay=01&startMonth=01&startYear=2017&endDay=31&endMonth=06&endYear=2017&isRanged=false&symbol=aapl');
   });
 
 });

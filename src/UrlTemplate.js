@@ -1,36 +1,32 @@
+const tRegEx = /({(.+?)})/g;
+
 export default class UrlTemplate {
   constructor(template) {
     this.uri = new Uri(template);
+    this.path = this.uri.path.get();
+    this.urlTemplateQuery = this.uri.query.getUrlTemplateQuery();
     return this;
   }
 
   expand(obj = {}) {
-    console.log("this.uri.host()", this.uri.host());
-    console.log("this.uri.toString()", this.uri.toString())
-    this.path = this.uri.path.get();
-    console.log("this.path", this.path)
-    this.urlTemplateQuery = this.uri.query.getUrlTemplateQuery();
-    // console.log("this.urlTemplateQuery", this.urlTemplateQuery)
+
     this.path.forEach((path, i) => {
       let substitution = path.substring(path.lastIndexOf("{") + 1, path.lastIndexOf("}"));
-      console.log("substitution", substitution)
       if (substitution) this.uri.path.replace(obj[substitution], i);
     });
 
     if (this.urlTemplateQuery) {
       let tEls = this.urlTemplateQuery.split(',');
       tEls.forEach((te) => {
-        console.log("te", te)
-        if (obj[te]) {
+        if (typeof obj[te] !== 'undefined') {
           let o = {};
-          o[te] = obj[te];
+          o[te] = String(obj[te]);
            this.uri.query.add(o);
         }
       });
     }
 
     this.template = this.uri.toString();
-    console.log("this.template", this.template)
     return this;
 
   }
