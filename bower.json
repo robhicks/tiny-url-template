@@ -1,8 +1,8 @@
 {
-  "name": "UrlTemplate",
-  "version": "1.0.0",
+  "name": "url-template-",
+  "version": "1.0.1",
   "description": "Lightweight Javascript library which complies with RFC 6570 for expanding URL Templates",
-  "main": "dist/UrlTemplate.iife.js",
+  "main": "dist/url-template-.iife.js",
   "ignore": [
     "**/.*",
     "node_modules",

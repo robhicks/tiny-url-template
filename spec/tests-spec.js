@@ -1,6 +1,6 @@
 require('reify');
 
 global.nock = require('nock');
-global.Uri = require('Uri');
+global.Uri = require('uri-');
 
-require('./UriTemplate.test.js');
+require('./url-template-.test.js');

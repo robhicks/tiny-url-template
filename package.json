@@ -1,6 +1,6 @@
 {
-  "name": "UrlTemplate",
-  "version": "1.0.0",
+  "name": "url-template-",
+  "version": "1.0.1",
   "description": "Lightweight Javascript library which complies with RFC 6570 for expanding URL Templates.",
   "keywords": [
     "Lightweight",
@@ -10,9 +10,9 @@
     "URI Templates",
     "RFC 6570"
   ],
-  "repository": "https://github.com/robhicks/UrlTemplate.git",
-  "main": "dist/UrlTemplate.cjs.js",
-  "module": "dist/UrlTemplate.es.js",
+  "repository": "https://github.com/robhicks/url-template-.git",
+  "main": "dist/url-template-.cjs.js",
+  "module": "dist/url-template-.es.js",
   "scripts": {
     "build": "rollup -cw",
     "dev": "rollup -cw",
@@ -38,6 +38,6 @@
     "rollup-watch": "^3.2.2"
   },
   "dependencies": {
-    "Uri": "https://github.com/robhicks/Uri.git#3.0.1"
+    "uri-": "https://github.com/robhicks/uri-.git#3.0.2"
   }
 }

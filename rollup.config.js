@@ -17,15 +17,15 @@ module.exports = {
 	],
 	targets: [
 		{
-			dest: 'dist/UrlTemplate.cjs.js',
+			dest: 'dist/url-template-.cjs.js',
 			format: 'cjs',
 		},
 		{
-			dest: 'dist/UrlTemplate.es.js',
+			dest: 'dist/url-template-.es.js',
 			format: 'es',
 		},
 		{
-			dest: 'dist/UrlTemplate.iife.js',
+			dest: 'dist/url-template-.iife.js',
 			format: 'iife',
 			moduleName: 'UrlTemplate'
 		}
