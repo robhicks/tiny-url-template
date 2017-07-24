@@ -1,8 +1,8 @@
 const tRegEx = /({(.+?)})/g;
 
-export default class UrlTemplate {
+export default class TinyUrlTemplate {
   constructor(template) {
-    this.uri = new Uri(template);
+    this.uri = new TinyUri(template);
     this.path = this.uri.path.get();
     this.urlTemplateQuery = this.uri.query.getUrlTemplateQuery();
     return this;

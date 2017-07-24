@@ -1,11 +1,11 @@
-var UrlTemplate = function UrlTemplate(template) {
-  this.uri = new Uri(template);
+var TinyUrlTemplate = function TinyUrlTemplate(template) {
+  this.uri = new TinyUri(template);
   this.path = this.uri.path.get();
   this.urlTemplateQuery = this.uri.query.getUrlTemplateQuery();
   return this;
 };
 
-UrlTemplate.prototype.expand = function expand (obj) {
+TinyUrlTemplate.prototype.expand = function expand (obj) {
     var this$1 = this;
     if ( obj === void 0 ) obj = {};
 
@@ -31,8 +31,8 @@ UrlTemplate.prototype.expand = function expand (obj) {
 
 };
 
-UrlTemplate.prototype.toString = function toString () {
+TinyUrlTemplate.prototype.toString = function toString () {
   return this.template;
 };
 
-export default UrlTemplate;
+export default TinyUrlTemplate;

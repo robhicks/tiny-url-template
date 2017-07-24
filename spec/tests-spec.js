@@ -1,6 +1,6 @@
 require('reify');
 
 global.nock = require('nock');
-global.Uri = require('uri-');
+global.TinyUri = require('tiny-uri');
 
-require('./url-template-.test.js');
+require('./tiny-url-template.test.js');

@@ -4,9 +4,9 @@ const nodeResolve = require('rollup-plugin-node-resolve');
 const uglify = require('rollup-plugin-uglify-es');
 
 module.exports = {
-	entry: 'src/UrlTemplate.js',
+	entry: 'src/TinyUrlTemplate.js',
 	external: [
-		{Uri: 'Uri'}
+		{TinyUri: 'TinyUri'}
 	],
 	globals: {
 	},
@@ -17,17 +17,17 @@ module.exports = {
 	],
 	targets: [
 		{
-			dest: 'dist/url-template-.cjs.js',
+			dest: 'dist/tiny-url-template.cjs.js',
 			format: 'cjs',
 		},
 		{
-			dest: 'dist/url-template-.es.js',
+			dest: 'dist/tiny-url-template.es.js',
 			format: 'es',
 		},
 		{
-			dest: 'dist/url-template-.iife.js',
+			dest: 'dist/tiny-url-template.iife.js',
 			format: 'iife',
-			moduleName: 'UrlTemplate'
+			moduleName: 'TinyUrlTemplate'
 		}
 	]
 };

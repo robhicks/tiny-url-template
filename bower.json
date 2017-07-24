@@ -1,8 +1,11 @@
 {
-  "name": "url-template-",
-  "version": "1.0.2",
+  "name": "tiny-url-template",
+  "version": "2.0.0",
   "description": "Lightweight Javascript library which complies with RFC 6570 for expanding URL Templates",
-  "main": "dist/url-template-.iife.js",
+  "main": "dist/tiny-url-template.iife.js",
+  "dependencies": {
+    "tiny-uri": "^4.0.0"
+  },
   "ignore": [
     "**/.*",
     "node_modules",
