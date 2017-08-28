@@ -6,7 +6,6 @@ const uglify = require('rollup-plugin-uglify-es');
 module.exports = {
 	entry: 'src/TinyUrlTemplate.js',
 	external: [
-		{TinyUri: 'TinyUri'}
 	],
 	globals: {
 	},

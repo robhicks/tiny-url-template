@@ -1,6 +1,6 @@
 {
   "name": "tiny-url-template",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Lightweight Javascript library which complies with RFC 6570 for expanding URL Templates.",
   "keywords": [
     "Lightweight",

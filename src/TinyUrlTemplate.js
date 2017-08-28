@@ -1,3 +1,4 @@
+import TinyUri from 'tiny-uri';
 const tRegEx = /({(.+?)})/g;
 
 export default class TinyUrlTemplate {
